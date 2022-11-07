@@ -19,7 +19,7 @@ public class C05_panoroma {
         WebElement kullaniciadi = driver.findElement(By.name("edtUserName"));
         kullaniciadi.sendKeys("dileksugida3");
         WebElement kullanicisifre = driver.findElement(By.id("edtPass"));
-        kullanicisifre.sendKeys("Nbe102030" + Keys.ENTER);
+        kullanicisifre.sendKeys("Ebn102030" + Keys.ENTER);
         driver.findElement(By.id("ctl09_lblCloseText")).click();
         driver.findElement(By.xpath("(//*[@class='col-xs-2 col-sm-2 col-lg-2 col-xl-2 tab-item'])[2]")).click();
         driver.findElement(By.xpath("(//*[@class='col-xs-10 menu-text-container'])[172]")).click();
@@ -33,15 +33,15 @@ public class C05_panoroma {
         driver.findElement(By.id("MainNvgxToolbar_Item_0")).click();
         driver.findElement(By.id("Grd_Faturalar_Grd_FaturalarToggleCb")).click();
         driver.findElement(By.id("WebNavxToolbar_Item_10")).click();
-        //driver.findElement(By.xpath("//*[text()='Yazdır']")).click();
+        driver.findElement(By.xpath("//*[@id='MainNvgxToolbar_Item_0' and @title='Yazdır']")).sendKeys(Keys.ENTER);
         //yazdir.sendKeys(Keys.SPACE,Keys.TAB,Keys.TAB,Keys.TAB);
-        driver.findElement(By.xpath(//*[@id='dialog-body'])).click();
-        driver.findElement(By.name("edtEbelgeBasimTipi$DL")).sendKeys("y");
+      //  driver.findElement(By.xpath(//*[@id='dialog-body'])).click();
+        //river.findElement(By.name("edtEbelgeBasimTipi$DL")).sendKeys("y");
 
-        WebElement Efaturasablon = driver.findElement(By.id("edtEFaturaSablon_NE_t"));
-        Efaturasablon.sendKeys("11" + Keys.ENTER);
-        driver.findElement(By.id("MainNvgxToolbar_Item_0")).click();
-        driver.findElement(By.id("Grd_Faturalar_Grd_FaturalarToggleCb")).click();
+       // WebElement Efaturasablon = driver.findElement(By.id("edtEFaturaSablon_NE_t"));
+       // Efaturasablon.sendKeys("11" + Keys.ENTER);
+       // driver.findElement(By.id("MainNvgxToolbar_Item_0")).click();
+      //  driver.findElement(By.id("Grd_Faturalar_Grd_FaturalarToggleCb")).click();
 
         // driver.findElement(By.id("ListGrid_R0RowCb")).click();
         //System.out.println("yükleme no " + driver.findElement(By.id("NvgxToolbar_Item_0")).getText());
